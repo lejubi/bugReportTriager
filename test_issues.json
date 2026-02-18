@@ -1,0 +1,102 @@
+[
+    {
+    "test_group": "Weak Signal (Retry)",
+    "expected_id": "New",
+    "text": "The page is acting weird when I zoom in. Elements shift around. Chrome browser."
+  },
+  {
+    "test_group": "Weak Signal (Retry)",
+    "expected_id": "New",
+    "text": "Is the database slow? The search bar is taking 10 seconds but only for 'shoes'. Everything else is fast."
+  },
+  {
+    "test_group": "Weak Signal (Retry)",
+    "expected_id": "New",
+    "text": "I can't save my settings. The console says something about CORS policy."
+  },
+  {
+    "test_group": "Weak Signal (Retry)",
+    "expected_id": "New",
+    "text": "Emails look broken in Outlook 2013. The layout is smashed."
+  },
+  {
+    "test_group": "Duplicate",
+    "expected_id": "ISSUE-101",
+    "text": "I can't log in. Every time I type my password which includes a % symbol, the page just throws a server error 500."
+  },
+  {
+    "test_group": "Duplicate",
+    "expected_id": "ISSUE-114",
+    "text": "Major billing issue: if I click the 'Pay' button twice quickly, it actually charges my card two times. The button should disable itself."
+  },
+  {
+    "test_group": "Duplicate",
+    "expected_id": "ISSUE-105",
+    "text": "The app is totally unusable on my Pixel 6 (Android 13). It just freezes on the logo screen when I open it."
+  },
+  {
+    "test_group": "Duplicate",
+    "expected_id": "ISSUE-136",
+    "text": "Security Alert: Our audit found that the 'uploads' S3 bucket is public. Anyone can write to it."
+  },
+  {
+    "test_group": "Duplicate",
+    "expected_id": "ISSUE-112",
+    "text": "My customers are complaining that they aren't getting the password reset emails. I checked the logs and they are being dropped."
+  },
+  {
+    "test_group": "Duplicate",
+    "expected_id": "ISSUE-124",
+    "text": "The math is wrong in the cart. I have a 10% discount applied but the final total is still showing the full price."
+  },
+  {
+    "test_group": "Needs Info",
+    "expected_id": null,
+    "text": "The system is broken."
+  },
+  {
+    "test_group": "Needs Info",
+    "expected_id": null,
+    "text": "It's not working on my computer."
+  },
+  {
+    "test_group": "Needs Info",
+    "expected_id": null,
+    "text": "I am very frustrated with this update."
+  },
+  {
+    "test_group": "Needs Info",
+    "expected_id": null,
+    "text": "Error."
+  },
+  {
+    "test_group": "Needs Info",
+    "expected_id": null,
+    "text": "Why is the data wrong?"
+  },
+  {
+    "test_group": "New Issue",
+    "expected_id": "New",
+    "text": "The QR code for 2FA setup is invalid. When I scan it with Google Authenticator, it says 'Invalid key format'."
+  },
+  {
+    "test_group": "New Issue",
+    "expected_id": "New",
+    "text": "On the 'About Us' page, the team photos are overlapping the text footer on iPad Pro (Portrait mode)."
+  },
+  {
+    "test_group": "New Issue",
+    "expected_id": "New",
+    "text": "Prometheus metrics are missing for the new recommendation-engine service. We are flying blind on CPU usage."
+  },
+  {
+    "test_group": "New Issue",
+    "expected_id": "New",
+    "text": "Typo in the main header: it says 'Welocome' instead of 'Welcome'."
+  },
+  {
+    "test_group": "New Issue",
+    "expected_id": "New",
+    "text": "API request to POST /orders is failing with a 400 Bad Request if the JSON body contains a trailing comma."
+  }
+]

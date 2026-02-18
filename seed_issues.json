@@ -1,0 +1,352 @@
+[
+  {
+    "id": "ISSUE-101",
+    "summary": "Login page 500 error with percent sign",
+    "description": "The login screen gives me a 500 server error if I use a password with a percent sign in it. Specifically, the character '%' causes a crash.",
+    "component": "Frontend",
+    "severity": "High"
+  },
+  {
+    "id": "ISSUE-102",
+    "summary": "Database timing out at 9am UTC",
+    "description": "The Postgres database is timing out every morning during peak traffic hours. This happens at 9 AM UTC daily.",
+    "component": "Database",
+    "severity": "Critical"
+  },
+  {
+    "id": "ISSUE-103",
+    "summary": "Typo in the Terms of Service footer link",
+    "description": "The link says 'Term of Sevice' instead of 'Terms of Service'.",
+    "component": "Frontend",
+    "severity": "Low"
+  },
+  {
+    "id": "ISSUE-104",
+    "summary": "API returns 404 for valid user IDs in the /users endpoint",
+    "description": "GET /users/{id} returns 404 even for users that definitely exist in the DB.",
+    "component": "API",
+    "severity": "High"
+  },
+  {
+    "id": "ISSUE-105",
+    "summary": "Android app freezes on splash screen",
+    "description": "On Pixel 6 devices running Android 13, the app hangs indefinitely on startup.",
+    "component": "Mobile",
+    "severity": "Critical"
+  },
+  {
+    "id": "ISSUE-106",
+    "summary": "Search filters are not applying correctly",
+    "description": "Selecting 'Price: Low to High' does not reorder the product list.",
+    "component": "Frontend",
+    "severity": "Medium"
+  },
+  {
+    "id": "ISSUE-107",
+    "summary": "AWS Lambda function memory limit exceeded",
+    "description": "The image processing lambda crashes with OOM errors on large files.",
+    "component": "Infrastructure",
+    "severity": "Medium"
+  },
+  {
+    "id": "ISSUE-108",
+    "summary": "Dark mode toggle resets on page refresh",
+    "description": "User preference for dark mode is not saved to local storage.",
+    "component": "Frontend",
+    "severity": "Low"
+  },
+  {
+    "id": "ISSUE-109",
+    "summary": "Stripe declining Canadian credit cards",
+    "description": "Stripe is declining all credit card payments from Canadian customers with a generic decline error for all CAD cards.",
+    "component": "Payments",
+    "severity": "Critical"
+  },
+  {
+    "id": "ISSUE-110",
+    "summary": "User profile image upload fails silently",
+    "description": "Uploading a PNG works, but JPEGs fail without any error message to the user.",
+    "component": "Frontend",
+    "severity": "Medium"
+  },
+  {
+    "id": "ISSUE-111",
+    "summary": "CI/CD pipeline fails on integration tests step",
+    "description": "The GitHub Action runner times out waiting for the test database container.",
+    "component": "Infrastructure",
+    "severity": "High"
+  },
+  {
+    "id": "ISSUE-112",
+    "summary": "Forgot Password email never arrives",
+    "description": "Users report not receiving the reset link. SendGrid logs show 'Dropped'.",
+    "component": "Auth",
+    "severity": "High"
+  },
+  {
+    "id": "ISSUE-113",
+    "summary": "Dashboard widgets overlap on mobile view",
+    "description": "On screens smaller than 375px wide, the graph widget covers the metrics cards.",
+    "component": "Frontend",
+    "severity": "Medium"
+  },
+  {
+    "id": "ISSUE-114",
+    "summary": "Double charge on Pay button double click",
+    "description": "Users are double charging themselves by clicking the pay button twice. The button needs to be disabled after the first click.",
+    "component": "Payments",
+    "severity": "Critical"
+  },
+  {
+    "id": "ISSUE-115",
+    "summary": "Export to CSV feature downloads empty file",
+    "description": "The reporting module generates a 0kb CSV file regardless of date range selected.",
+    "component": "Backend",
+    "severity": "High"
+  },
+  {
+    "id": "ISSUE-116",
+    "summary": "Redis cache keys not expiring",
+    "description": "Old session data is persisting in Redis indefinitely, causing memory bloat.",
+    "component": "Infrastructure",
+    "severity": "Medium"
+  },
+  {
+    "id": "ISSUE-117",
+    "summary": "iOS App crash on push notification",
+    "description": "The iOS app immediately crashes when the user taps on a push notification. Affects iOS 16 users.",
+    "component": "Mobile",
+    "severity": "Critical"
+  },
+  {
+    "id": "ISSUE-118",
+    "summary": "Product description text is cut off",
+    "description": "Descriptions longer than 200 chars are truncated without a 'Read More' link.",
+    "component": "Frontend",
+    "severity": "Low"
+  },
+  {
+    "id": "ISSUE-119",
+    "summary": "Admin panel slow to load user list",
+    "description": "Loading the user table takes >15 seconds due to lack of pagination.",
+    "component": "Backend",
+    "severity": "Medium"
+  },
+  {
+    "id": "ISSUE-120",
+    "summary": "GraphQL query returns internal server error on nested fields",
+    "description": "Querying user -> posts -> comments -> author throws 500.",
+    "component": "API",
+    "severity": "High"
+  },
+  {
+    "id": "ISSUE-121",
+    "summary": "Sidebar navigation missing icons in Safari",
+    "description": "SVG icons do not render in the sidebar on Safari v15.",
+    "component": "Frontend",
+    "severity": "Low"
+  },
+  {
+    "id": "ISSUE-122",
+    "summary": "ElasticSearch indexing lag",
+    "description": "New products take up to an hour to appear in search results.",
+    "component": "Search",
+    "severity": "Medium"
+  },
+  {
+    "id": "ISSUE-123",
+    "summary": "JWT token expiration time is too short",
+    "description": "Tokens expire after 5 minutes, forcing frequent re-logins.",
+    "component": "Auth",
+    "severity": "Medium"
+  },
+  {
+    "id": "ISSUE-124",
+    "summary": "Cart total calculation incorrect for discounted items",
+    "description": "Items with a 10% discount are being calculated at full price in the final total.",
+    "component": "Payments",
+    "severity": "Critical"
+  },
+  {
+    "id": "ISSUE-125",
+    "summary": "403 Forbidden on public API documentation",
+    "description": "The /docs endpoint is prompting for basic auth unexpectedly.",
+    "component": "Infrastructure",
+    "severity": "High"
+  },
+  {
+    "id": "ISSUE-126",
+    "summary": "Video player controls unresponsive on Firefox",
+    "description": "Play/Pause buttons do nothing on Firefox Quantum.",
+    "component": "Frontend",
+    "severity": "Medium"
+  },
+  {
+    "id": "ISSUE-127",
+    "summary": "User settings page throws React hydration error",
+    "description": "Console shows hydration mismatch error on /settings/profile.",
+    "component": "Frontend",
+    "severity": "Low"
+  },
+  {
+    "id": "ISSUE-128",
+    "summary": "Docker build fails due to missing dependency",
+    "description": "Build fails at 'pip install -r requirements.txt' looking for pandas version.",
+    "component": "Infrastructure",
+    "severity": "High"
+  },
+  {
+    "id": "ISSUE-129",
+    "summary": "Chat websocket disconnects frequently",
+    "description": "Users are disconnected from chat every 2-3 minutes.",
+    "component": "Backend",
+    "severity": "High"
+  },
+  {
+    "id": "ISSUE-130",
+    "summary": "Incorrect currency symbol for JPY",
+    "description": "Japanese Yen is showing as '$' instead of '¥'.",
+    "component": "Frontend",
+    "severity": "Low"
+  },
+  {
+    "id": "ISSUE-131",
+    "summary": "Admin cannot delete banned users",
+    "description": "Delete button is disabled for users with 'Banned' status.",
+    "component": "Backend",
+    "severity": "Medium"
+  },
+  {
+    "id": "ISSUE-132",
+    "summary": "Memory leak in Node.js service",
+    "description": "RSS memory usage grows linearly until crash every 48 hours.",
+    "component": "Backend",
+    "severity": "Critical"
+  },
+  {
+    "id": "ISSUE-133",
+    "summary": "Email footer has broken unsubscribe link",
+    "description": "Clicking unsubscribe leads to a 404 page.",
+    "component": "Marketing",
+    "severity": "High"
+  },
+  {
+    "id": "ISSUE-134",
+    "summary": "Inventory count goes negative",
+    "description": "It is possible to purchase more items than are in stock, resulting in -1 inventory.",
+    "component": "Backend",
+    "severity": "Critical"
+  },
+  {
+    "id": "ISSUE-135",
+    "summary": "Mobile menu button hard to click",
+    "description": "Touch target for the hamburger menu is too small (20px).",
+    "component": "Mobile",
+    "severity": "Low"
+  },
+  {
+    "id": "ISSUE-136",
+    "summary": "S3 bucket permissions too open",
+    "description": "Security audit shows the 'uploads' bucket allows public write access.",
+    "component": "Security",
+    "severity": "Critical"
+  },
+  {
+    "id": "ISSUE-137",
+    "summary": "Date picker shows wrong day of week",
+    "description": "Calendar component thinks Monday is Sunday.",
+    "component": "Frontend",
+    "severity": "Medium"
+  },
+  {
+    "id": "ISSUE-138",
+    "summary": "Slow query on 'Order History' page",
+    "description": "Loading order history performs a full table scan.",
+    "component": "Database",
+    "severity": "High"
+  },
+  {
+    "id": "ISSUE-139",
+    "summary": "Avatar image aspect ratio distorted",
+    "description": "Square images are being stretched into rectangles.",
+    "component": "Frontend",
+    "severity": "Low"
+  },
+  {
+    "id": "ISSUE-140",
+    "summary": "2FA SMS codes not delivered",
+    "description": "Two-factor authentication SMS codes are not being delivered to users. No SMS is received even after waiting.",
+    "component": "Auth",
+    "severity": "High"
+  },
+  {
+    "id": "ISSUE-141",
+    "summary": "Kubernetes pods stuck in Pending state",
+    "description": "New deployments remain in Pending due to insufficient CPU.",
+    "component": "Infrastructure",
+    "severity": "High"
+  },
+  {
+    "id": "ISSUE-142",
+    "summary": "Translation missing for Spanish locale",
+    "description": "Homepage displays translation keys like 'home.title' instead of text.",
+    "component": "Frontend",
+    "severity": "Medium"
+  },
+  {
+    "id": "ISSUE-143",
+    "summary": "File download filename is corrupted",
+    "description": "Downloaded files have random characters in the filename.",
+    "component": "Backend",
+    "severity": "Low"
+  },
+  {
+    "id": "ISSUE-144",
+    "summary": "API rate limiter blocking legitimate traffic",
+    "description": "Internal services are being rate limited by the gateway.",
+    "component": "Infrastructure",
+    "severity": "High"
+  },
+  {
+    "id": "ISSUE-145",
+    "summary": "Session cookies missing Secure flag",
+    "description": "Cookies are being sent over non-HTTPS connections.",
+    "component": "Security",
+    "severity": "High"
+  },
+  {
+    "id": "ISSUE-146",
+    "summary": "Graph axis labels overlap",
+    "description": "On the analytics page, the X-axis labels overlap when viewing monthly data.",
+    "component": "Frontend",
+    "severity": "Low"
+  },
+  {
+    "id": "ISSUE-147",
+    "summary": "Refund webhook failing verification",
+    "description": "Webhook signature verification fails for refund events only.",
+    "component": "Payments",
+    "severity": "High"
+  },
+  {
+    "id": "ISSUE-148",
+    "summary": "User search case sensitive",
+    "description": "Searching for 'john' does not find 'John'.",
+    "component": "Search",
+    "severity": "Medium"
+  },
+  {
+    "id": "ISSUE-149",
+    "summary": "Browser back button breaks SPA routing",
+    "description": "Clicking back does not render the previous view in the React app.",
+    "component": "Frontend",
+    "severity": "Medium"
+  },
+  {
+    "id": "ISSUE-150",
+    "summary": "Log files consuming all disk space",
+    "description": "App logs are not rotating, filling the 50GB disk in 2 days.",
+    "component": "Infrastructure",
+    "severity": "Critical"
+  }
+]
